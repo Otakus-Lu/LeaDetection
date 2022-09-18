@@ -1,0 +1,97 @@
+<view class="container">
+<view class="title">
+<p>病残</p>
+<p id="first">树叶检测系统</p>
+</view>
+<view class="maincon">
+    <view class="bg-img bg-mask padding-tb-xl" bindtap="showModal" data-target="bottomModal" style="background-image: url('../../images/树叶.png');height: 300rpx;width: 325rpx;margin-left: 10rpx;border-radius: 20rpx;">
+        <view class="padding-xl text-white">
+            <view class="padding-xs text-xl">
+                拍照检测
+            </view>
+        <!-- <view class="padding-xs">
+            Only the guilty need fear me.
+            </view> -->
+        </view>
+    </view>
+    <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+        <view class="cu-dialog">
+            <view class="cu-bar bg-white">
+                <!-- <view class="action text-green">确定</view> -->
+                <view class="action text-blue" bindtap="hideModal" >取消</view>
+            </view>
+            <view class="solid-bottom text-df padding" bindtap="TakePhoto">
+                拍照上传
+            </view>
+            <view class="solid-bottom text-df padding" bindtap="ChoosePhoto">
+                照片上传
+            </view>
+        </view>
+    </view>
+    <view class="bg-img bg-mask padding-tb-xl" bindtap="showModal" data-target="DrawerModalR" style="background-image: url('../../images/树叶2.jpg');height: 300rpx;width: 325rpx;margin-left: 15rpx;margin-right: 10rpx;border-radius: 20rpx;">
+        <view class="padding-xl text-white">
+            <view class="padding-xs text-xl">
+                关于我们
+            </view>
+        <!-- <view class="padding-xs">
+            Only the guilty need fear me.
+            </view> -->
+        </view>
+    </view>
+    <view class="cu-modal drawer-modal justify-end {{modalName=='DrawerModalR'?'show':''}}" bindtap="hideModal">
+        <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
+            <view class="cu-list menu text-left" >
+                <view class="aboutlist" wx:for="{{aboutlist}}" wx:key="index">
+                    <view class="content flex align-center justify-between" data-index="{{index}}" catchtap="panel" style="margin: 10rpx 0 10rpx;border-bottom: 1rpx solid #eeeeee;line-height: 80rpx;">
+                    <view class="text-lg" >{{item.title}}</view>
+                    <text class="{{item.show?'cuIcon-unfold':'cuIcon-fold'}} text-lg"></text>                   
+                    </view>
+                    <view class='detail' style="height:{{ item.show?'':0}}">
+                        <text>{{item.content}}</text>
+                    </view>
+                </view>
+                
+            </view>
+        </view>
+    </view>
+</view>
+<view class="maincon">
+    <view class="bg-img bg-mask padding-tb-xl" bindtap="goHistory" data-target="bottomModal" style="background-image: url('../../images/树叶3.png');height: 300rpx;width: 325rpx;margin-left: 10rpx;border-radius: 20rpx;">
+        <view class="padding-xl text-white">
+            <view class="padding-xs text-xl">
+                历史记录
+            </view>
+        <!-- <view class="padding-xs">
+            Only the guilty need fear me.
+            </view> -->
+        </view>
+    </view>
+    <view class="bg-img bg-mask padding-tb-xl" bindtap="toAlgIntroduce" style="background-image: url('../../images/树叶4.png');height: 300rpx;width:325rpx;margin-left: 15rpx;margin-right: 10rpx;border-radius: 20rpx;">
+        <view class="padding-xl text-white">
+            <view class="padding-xs text-xl">
+                算法简述
+            </view>
+        <!-- <view class="padding-xs">
+            Only the guilty need fear me.
+            </view> -->
+        </view>
+    </view>
+</view>
+  <!-- <view class="list">
+    <view class="item" wx:for="{{array}}" wx:for-item="url">
+      <image class="img" src="{{url}}"></image>
+      <image bindtap="delete" data-index="{{index}}" class="delete" src="/images/delete.png"></image>
+    </view>
+  </view> -->
+<!-- <view class="uploadPad">
+<button bindtap="chooseImg" style="margin-top: 20rpx;" type="primary" plain="true">上传照片</button>
+</view> -->
+</view>
+<!-- <swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper> -->

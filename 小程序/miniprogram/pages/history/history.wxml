@@ -1,0 +1,21 @@
+<view wx:if="{{Imginfo_data.length > 0}}">
+	<view wx:for="{{Imginfo_data}}">
+		<view class="cu-card article no-card margin-top" bindtap="toDetail" data-id="{{item.id}}">
+			<view class="cu-item shadow">
+				<view class="title">
+					<view class="text-cut"><text class='cuIcon-titles text-cyan '></text>{{item.time_format}}</view>
+				</view>
+				<view class="content">
+					<view class="desc">
+                            <image src="{{item.resultImg}}"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view wx:else>
+	<view class="text-center padding margin-top">
+		<text class="text-grey text-xl">暂无历史记录</text>
+	</view>
+</view>

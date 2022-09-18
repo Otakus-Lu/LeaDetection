@@ -1,0 +1,80 @@
+/* pages/mainpage/mainpage.wxss */
+.container{
+    /* padding-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20rpx; */
+  }
+.maincon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20rpx;
+}
+  .uploadPad{
+    /* display: flex;
+    flex-direction: row !important; */
+  }
+  .title{
+    font-size: 35px;
+  }
+  .backImg{
+    width: 100%;
+  }
+  .aboutlist{
+    /* position: relative;
+    display: flex;
+    padding: 20rpx 0 30rpx;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20rpx;
+    padding-right: 30rpx;
+    transition-duration: 0s;
+    flex-direction: column; */
+    margin: 10rpx auto;
+    padding: 10rpx 30rpx 0;
+  }
+  .detail {
+    /* all: initial; */
+    align-self:stretch;
+    margin: 10rpx auto;
+    font-size: 25rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+    height: 340rpx;
+    transition: height 1s;
+    overflow: auto;
+  }
+  #first{
+    text-shadow:10px -10px 4px silver;
+    color: darkseagreen;
+  }
+  .add{
+    width: 100rpx;
+    height: 100rpx;
+  }
+  .list{
+    display: flex;
+    flex-direction: row;
+  }
+  .list .item{
+    position: relative;
+    margin-right: 20rpx;
+  }
+  .list .img{
+    width: 100rpx;
+    height: 100rpx;
+  }
+  .list .delete{
+    width: 50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: -20rpx;
+    right: -20rpx;
+  }
+  .tower-swiper .tower-item {
+    transform: scale(calc(0.5 + var(--index) / 10));
+    margin-left: calc(var(--left) * 100rpx - 150rpx);
+    z-index: var(--index);
+}

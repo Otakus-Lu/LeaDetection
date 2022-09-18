@@ -1,0 +1,41 @@
+/* pages/imgpage/imgpage.wxss */
+.card-bottom{
+    display: flex;
+    align-items: center;
+
+}
+.download{
+    height: 70rpx;
+    color: #ffffff;
+    background-color: #0086FD;
+    margin-top: 8rpx;
+    margin-bottom: 8rpx;
+    border-radius: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1.5;
+}
+.share{
+    height: 70rpx;
+    color: #ffffff;
+    background-color: #00BBB5;
+    margin-top: 8rpx;
+    margin-bottom: 8rpx;
+    margin-left: 8rpx;
+    border-radius: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1.5;
+}
+.more{
+    height: 70rpx;
+    margin-top: 8rpx;
+    margin-bottom: 8rpx;
+    margin-left: 8rpx;
+    border-radius: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

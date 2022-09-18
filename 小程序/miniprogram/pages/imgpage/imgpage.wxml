@@ -1,0 +1,35 @@
+<view class="main">
+
+<view class="cu-card case {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="{{originImg}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">原图</view>
+      <view class="cu-bar bg-shadeBottom">
+      </view>
+    </view>
+  </view>
+</view>
+<view class="flex solid-bottom text-xxl padding justify-center">
+    <text class="cuIcon-countdown lg text-gray">识别耗时{{timeconsume}}ms</text>
+</view>
+<view class="cu-card case {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="image">
+      <image src="{{resultImg}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">识别后</view>
+      <view class="cu-bar bg-shadeBottom">
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+        <view class="card-bottom">
+            <button class="download" bindtap="download">下载</button>
+            <button class="share" open-type="share">分享</button>
+            <button class="more" type="primary" bindtap="ChoosePhoto">再来一张</button>
+        </view>
+    </view>
+  </view>
+  <!-- <button type="primary" bindtap="save">测试保存</button> -->
+
+</view>
+</view>

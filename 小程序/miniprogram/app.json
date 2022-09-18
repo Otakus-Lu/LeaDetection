@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/mainpage/mainpage",
+    "pages/history/history",
+    "pages/imgpage/imgpage",
+    "pages/detail/detail",
+    "pages/AlgIntroduce/AlgIntroduce"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "残病树叶检测",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/mainpage/mainpage",
+      "text": "首页",
+      "iconPath": "images/camera.png",
+      "selectedIconPath": "images/camera-yes.png"
+    },{
+    "pagePath": "pages/history/history",
+    "text": "历史",
+    "iconPath": "images/history.png",
+    "selectedIconPath": "images/history-yes.png"
+  }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
